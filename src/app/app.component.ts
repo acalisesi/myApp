@@ -12,9 +12,10 @@ export class AppComponent {
   myArticolo: Articolo;
   constructor() {
     this.myArticolo = {
-      titolo : "Angular component",
+      titolo : "Angular component example",
       autore : "Geppo the Foolish",
-      testo : "Try component creation "
+      testo : "Try component creation: it's very simple.",
+      numApprezzamenti : 0
     };
   }
 }

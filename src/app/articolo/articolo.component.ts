@@ -9,12 +9,12 @@ import { Articolo } from './articolo';
 export class ArticoloComponent {
   @Input() articolo!: Articolo ;
   constructor() {
-    /*
-    this.articolo = {
-      titolo: "Angular component",
-      autore: "Andrea Calisesi",
-      testo:  "Try first component creation."
-    };
-    */
+  }
+  incrementaApprezzamenti(event: Event) {
+    console.log(event);  
+    /* increment an articolo property */    
+    this.articolo.numApprezzamenti! += 1;
+    /* prevent event propagation on child component  */
+    event.preventDefault();
   }
 }
