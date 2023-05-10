@@ -18,4 +18,10 @@ export class AppComponent {
       numApprezzamenti : 0
     };
   }
+  mostraMessaggioRingraziamento(event:any) {
+    //console.log(event);
+    let value:number = event.numApprezzamenti;
+    let alertMessage:string = `Grazie per aver espresso il tuo apprezzamento per l'articolo! \nIl numero di apprezzamenti raggiunti è ${value}`;
+    alert(alertMessage);
+  }
 }

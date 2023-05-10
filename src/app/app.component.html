@@ -486,7 +486,6 @@
 
 <!--Link with a article component example -->
 <!--<articolo></articolo>-->
-<h1>
-  {{title}}
-</h1> 
-<articolo [articolo]="myArticolo"></articolo>
+<h1>{{title}}</h1> 
+<!--<articolo [articolo]="myArticolo"></articolo>-->
+<articolo [articolo]="myArticolo" (like)="mostraMessaggioRingraziamento($event)"></articolo>
