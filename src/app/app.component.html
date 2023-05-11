@@ -489,3 +489,11 @@
 <h1>{{title}}</h1> 
 <!--<articolo [articolo]="myArticolo"></articolo>-->
 <articolo [articolo]="myArticolo" (like)="mostraMessaggioRingraziamento($event)"></articolo>
+
+<div>
+  Inserisci un numero:
+  <input type="number" #numero (keyup)="0" value="0"/>
+  </div>
+<div>
+	Il doppio di {{+numero.value}} è {{ (+numero.value * 2) }}
+</div>
