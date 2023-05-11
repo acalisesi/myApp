@@ -14,7 +14,7 @@ export class AppComponent {
     this.myArticolo = {
       titolo : "Angular component example",
       autore : "Geppo the Foolish",
-      testo : "Try component creation: it's very simple.",
+      testo : "Try component creation: it's very simple. - In Italian: è molto semplice",
       numApprezzamenti : 0
     };
   }
