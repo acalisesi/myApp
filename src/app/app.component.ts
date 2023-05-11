@@ -10,6 +10,7 @@ import { Articolo } from './articolo/articolo';
 export class AppComponent {
   title = 'myApp-Andrea';
   myArticolo: Articolo;
+  elencoArticoli: Array<Articolo> = Array();
   constructor() {
     this.myArticolo = {
       titolo : "Angular component example",
@@ -23,5 +24,9 @@ export class AppComponent {
     let value:number = event.numApprezzamenti;
     let alertMessage:string = `Grazie per aver espresso il tuo apprezzamento per l'articolo! \nIl numero di apprezzamenti raggiunti è ${value}`;
     alert(alertMessage);
+  }
+  addArticolo(articolo:Articolo){
+    this.elencoArticoli.push(articolo);
+    console.log(`numero Articoli: ${this.elencoArticoli.length}`)
   }
 }

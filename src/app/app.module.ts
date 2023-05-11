@@ -4,13 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ArticoloComponent } from './articolo/articolo.component';
 
+import { FormsModule } from '@angular/forms';
+import { ArticoloFormComponent } from './articolo-form/articolo-form.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    ArticoloComponent
+    ArticoloComponent,
+    ArticoloFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
