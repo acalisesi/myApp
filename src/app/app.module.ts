@@ -7,6 +7,8 @@ import { ArticoloComponent } from './articolo/articolo.component';
 import { FormsModule } from '@angular/forms';
 import { ArticoloFormComponent } from './articolo-form/articolo-form.component';
 
+import { HttpClientModule } from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +17,8 @@ import { ArticoloFormComponent } from './articolo-form/articolo-form.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
