@@ -7,18 +7,31 @@ import { ArticoloComponent } from './articolo/articolo.component';
 import { FormsModule } from '@angular/forms';
 import { ArticoloFormComponent } from './articolo-form/articolo-form.component';
 
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ArticoloListaComponent } from './articolo-lista/articolo-lista.component'
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ArticoloComponent,
-    ArticoloFormComponent
-  ],
   imports: [
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: ArticoloListaComponent
+      },
+      {
+        path: 'nuovoArticolo',
+        component: ArticoloFormComponent
+      }      
+    ]),
     BrowserModule,
     FormsModule,
     HttpClientModule
+  ],
+  declarations: [
+    AppComponent,
+    ArticoloComponent,
+    ArticoloFormComponent,
+    ArticoloListaComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

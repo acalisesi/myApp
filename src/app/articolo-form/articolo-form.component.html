@@ -1,4 +1,4 @@
-<p>This is the articolo-form...</p>
+<p>articolo-form woks!</p>
 <form #myForm="ngForm">
     <div>
         <label for="txtTitolo">Titolo</label>
@@ -19,6 +19,8 @@
     <button type="submit" [disabled]="!myForm.valid" (click)="inviaArticolo()">Invia</button>
 </form>
 
+<!--
 titolo: {{model.titolo}}<br/>
 autore: {{model.autore}}<br/>
 testo: {{model.testo}}<br/>
+-->
